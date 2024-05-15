@@ -14,23 +14,43 @@
     </header>
     <main>
         <h1>Search engines</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas corporis eligendi, ipsa inventore harum, numquam voluptates dicta, facere ullam nemo? Iure qui odio quod et reprehenderit reiciendis assumenda minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas corporis eligendi, ipsa inventore
+            harum, numquam voluptates dicta, facere ullam nemo? Iure qui odio quod et reprehenderit reiciendis assumenda
+            minima?</p>
         <div class="flexbox">
-            <div class="search-box google-box">
+            <div id="google-box" class="search-box">
                 <fieldset>
                     <legend>Google</legend>
-                    <form action="https://www.google.com/search" method="get">
-                        <input type="text" name="q">
-                        <button>Search</button>
+                    <form action="https://www.google.com/search" method="get" target="_blank">
+                        <input type="text" name="q" required>
+                        <button type="submit">Search</button>
                     </form>
                 </fieldset>
             </div>
-            <div class="search-box yahoo-box">
+            <div id="yahoo-box" class="search-box">
                 <fieldset>
                     <legend>Yahoo</legend>
-                    <form action="https://ar.search.yahoo.com/search" method="get">
-                        <input type="text" name="p">
-                        <button>Search</button>
+                    <form action="https://ar.search.yahoo.com/search" method="get" target="_blank">
+                        <input type="text" name="p" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </fieldset>
+            </div>
+            <div id="bing-box" class="search-box">
+                <fieldset>
+                    <legend>Bing</legend>
+                    <form action="https://www.bing.com/search" method="GET" target="_blank">
+                        <input type="text" name="q" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </fieldset>
+            </div>
+            <div id="baidu-box" class="search-box">
+                <fieldset>
+                    <legend>Baidu</legend>
+                    <form action="https://www.baidu.com/s" method="GET" target="_blank">
+                        <input type="text" name="wd" required>
+                        <button type="submit">Search</button>
                     </form>
                 </fieldset>
             </div>
